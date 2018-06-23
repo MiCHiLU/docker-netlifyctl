@@ -3,6 +3,7 @@ FROM alpine:edge
 ARG version="0.4.0"
 
 RUN apk --no-cache --update add \
+  bash \
   ca-certificates \
   ;
 RUN virtual=del \
